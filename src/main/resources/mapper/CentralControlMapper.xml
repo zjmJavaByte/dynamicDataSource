@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kh.jkdw.mapper.CentralControlMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.kh.jkdw.model.CentralControl">
+        <id column="id" property="id" />
+        <result column="terminalno" property="terminalno" />
+        <result column="time" property="time" />
+        <result column="dissipation" property="dissipation" />
+        <result column="dealOpenDuration" property="dealOpenDuration" />
+        <result column="oneOpenDuration" property="oneOpenDuration" />
+        <result column="twoOpenDuration" property="twoOpenDuration" />
+        <result column="totalInWater" property="totalInWater" />
+        <result column="totalProudcWater" property="totalProudcWater" />
+        <result column="oneInPa" property="oneInPa" />
+        <result column="oneOutPa" property="oneOutPa" />
+        <result column="oneProdcWater" property="oneProdcWater" />
+        <result column="oneDenseWater" property="oneDenseWater" />
+        <result column="oneWaterDTS" property="oneWaterDTS" />
+        <result column="oneWaterTemper" property="oneWaterTemper" />
+        <result column="twoInPa" property="twoInPa" />
+        <result column="twoOutPa" property="twoOutPa" />
+        <result column="twoProducWater" property="twoProducWater" />
+        <result column="twoDenseWater" property="twoDenseWater" />
+        <result column="twoWaterDTS" property="twoWaterDTS" />
+        <result column="twoWaterTemper" property="twoWaterTemper" />
+        <result column="oneTankLevel" property="oneTankLevel" />
+        <result column="twoTankLevel" property="twoTankLevel" />
+        <result column="threeTankLevel" property="threeTankLevel" />
+        <result column="fourTankLevel" property="fourTankLevel" />
+        <result column="fiveTankLevel" property="fiveTankLevel" />
+        <result column="liftPumpOne" property="liftPumpOne" />
+        <result column="oneStirWork" property="oneStirWork" />
+        <result column="twoStirWork" property="twoStirWork" />
+        <result column="threeStirWork" property="threeStirWork" />
+        <result column="fourStirWork" property="fourStirWork" />
+        <result column="airCompressorOpera" property="airCompressorOpera" />
+        <result column="airPumpOpera" property="airPumpOpera" />
+        <result column="mudScraperOpera" property="mudScraperOpera" />
+        <result column="oneSysOpera" property="oneSysOpera" />
+        <result column="twoSysOpera" property="twoSysOpera" />
+        <result column="systemAlarm" property="systemAlarm" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, terminalno, time, dissipation, dealOpenDuration, oneOpenDuration, twoOpenDuration, totalInWater, totalProudcWater, oneInPa, oneOutPa, oneProdcWater, oneDenseWater, oneWaterDTS, oneWaterTemper, twoInPa, twoOutPa, twoProducWater, twoDenseWater, twoWaterDTS, twoWaterTemper, oneTankLevel, twoTankLevel, threeTankLevel, fourTankLevel, fiveTankLevel, liftPumpOne, oneStirWork, twoStirWork, threeStirWork, fourStirWork, airCompressorOpera, airPumpOpera, mudScraperOpera, oneSysOpera, twoSysOpera, systemAlarm
+    </sql>
+
+    <!--<insert id="insert" parameterType="com.kh.jkdw.model.CentralControl">
+        insert into t_central_control(terminalno)
+        values (#{terminalno,jdbcType=VARCHAR})
+    </insert>-->
+
+</mapper>
